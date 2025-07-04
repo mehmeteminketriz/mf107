@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yüzbaşı Serdar</title>
+</head>
+<body>
+    <h1>Sungurların Efsane Komutanı Yüzbaşı Serdar Kimdir</h1> <br>
+
+    <img src="favorikahraman/images.jpg" alt="Yüzbaşı Serdar Mert" width="400">
+
+
+    <h3>Biyografisi</h3>
+    <p>Yüzbaşı Serdar Mert, 1997 yılında ve sonrasında Türkiye'de ve sınır ötesinde yaşanan
+        askeri operasyonlar, harekâtlar, eylemler, kalkınmalar, terörist suikastları gibi 
+        olaylara müdahale eden özel bir tim olan Sungurlar'ın komutanıdır. Cesur ve atılgan
+      bir kişiliği vardır. Aksiyon ve askeri dizi, film sevenler için dizinin ilk bölümünü izlemek için <a href="https://www.youtube.com/watch?v=aRdl0C-ujFA">buraya</a> tıklayın </p>
+      
+
+      <h3>Özellikleri</h3>
+    <ul>
+        <li>Yüzbaşı Serdar, Sungurlar'ın komutanı ve en deneyimli askeridir.</li>
+        <li>Askeri strateji ve taktik konularında uzmandır.</li>
+        <li>Silah arkadaşları tarafından büyük bir saygı görür.</li>
+        <li>Her türlü zorlu koşulda görev yapabilme yeteneğine sahiptir.</li>
+        <li>Yüksek motivasyon ve liderlik becerileri ile tanınır.</li>
+    </ul>
+
+    <h3>Süper Güçleri</h3>
+    <ul>
+        <li>Bir bölük askerin yapacağı işi bazen tek başına yapıyor.</li>
+        <li>Üzerine yüzlerce kurşun sıkılsa bile ya hiç isabet etmiyor ya da sadece omzundan sıyrıkla kurtuluyor.</li>
+        <li>Sniper olmamasına rağmen bazen yüzlerce metre öteden tek kurşunla düşman etkisiz hale getiriliyor.
+            Hatta havada gelen bir füzeyi bile vurabiliyor 
+        </li>
+    </ul>
+
+    <h3>Düşmanları</h3>
+    <ul>
+        <li>İlk bölümlerde en büyük düşmanı terörist Baran</li>
+        <li>Sonradan time dahil olacak büyük ayı ve biraderlerinin ajanı Naza</li>
+        <li>Terör örgütü lideri Cemal</li>
+        <li>Konsolos</li>
+        <li>İran Generali Kasım</li>
+    </ul>
+
+    <h2>Tim Başvuru Formu</h2>
+
+    <form>
+
+        <label for="name_surname">Ad Ve Soyad</label>
+        <!-- required anahtar kelimesi ile bu inputun girilmesini zorunlu hale getiriyoruz -->
+        <!-- oninvalid ise alan geçersizse çalışır → özel uyarı mesajı gösterir. -->
+        <!-- setCustomValidity('...'): Tarayıcının göstereceği uyarı mesajını belirlemek için kullanılır. -->
+        <!-- oninput ise kullanıcı inputa bir şey yazdığında çalışır ve uyarı mesajını kaldırır. -->
+        <input id="name_surname" type="text" required
+        oninvalid="this.setCustomValidity('bu alanı doldurmanız zorunludur')" 
+        oninput="setCustomValidity('')"
+        ><br><br>
+
+        <label for="superhero_name">Süper Kahraman Adı</label>
+        <input id="superhero_name" type="text" required 
+        oninvalid="this.setCustomValidity('bu alanı doldurmanız zorunludur')"
+        oninput="setCustomValidity('')"
+        ><br><br>
+
+        <label for="fav_superpower">Favori Süper Güç</label>
+        <input id="fav_superpower" type="text" required
+        oninvalid="this.setCustomValidity('bu alanı doldurmanız zorunludur')"
+        oninput="setCustomValidity('')"
+        ><br><br>
+
+        <!-- rows: satır yüksekliğini belirler, cols: metin kutusunun kaç karakter olacağını belirler -->
+        <label for="message">Başvuru Mesajı</label><br>
+        <textarea id="message" name="message"
+        rows="4"
+        cols="50"
+        placeholder="Lütfen başvuru mesajınızı buraya yazınız"
+        required
+        oninvalid="this.setCustomValidity('bu alanı doldurmanız zorunludur')"
+        oninput="setCustomValidity('')"
+        ></textarea><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+
+</body>
+</html>
