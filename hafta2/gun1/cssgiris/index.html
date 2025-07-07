@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Giriş</title>
+    <title>Serfiz - En İyi Filmler Burada</title>
+    
     <style>
-
+        /* Selector Specificity ne kadar yüksek olursa o geçerli olur*/
+        /*Selector Specificity 1.0.1*/
+        /*id classa göre daha seçiciliği baskın*/
+        h1#zamanYolcusu {
+            color: red;
+            font-size: 30px;
+        } /*ne kadar spesifi detay verirsen o kadar web sayfasında performans düşer*/
+        #onGundeKayip {
+            color: blue;
+            font-size: 20px;
+        }
+        #beforeSunrise {
+            color: green;
+            font-size: 15px;
+        }
+        /*Selector Specificity 1.0.0*/
+        #zamanYolcusu{
+            color:blue;
+        }
     </style>
 </head>
 <body>
