@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Tasarım</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: #141414;
+        }
+        .card {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            display:grid;
+            
+        }
+        #city {
+            color: #94af40;
+        }
+        img {
+            margin: 10px auto;
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        div {
+            text-align: center;
+        }
+        .button {
+            background-color: #333333;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #span {
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="resim.jpg" alt="profil">
+        <h1>Mehmet Emin Ketriz</h1>
+        <h3 id="city">Siverek/Türkiye</h3>
+        <span id="span">Mobile and Front-end developer</span>
+        <button class="button github">Github</button>
+        <button class="button frontend">Frontend Mentor</button>
+        <button class ="button linkedin">LinkedIn</button>
+        <button class="button twitter">Twitter</button>
+        <button class="button Instagram">Instagram</button>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Tasarım</title>
+    <style>
+        body{
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card{
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            width: 280px;
+            display: grid;
+        }
+        img{
+            margin: 10px auto;
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        #name{
+            color: white;
+            margin: 8px 0;
+            font-family: monospace;
+        }
+        #city{
+            color: #94af40;
+        }
+        #span{
+            display: block;
+            margin-bottom: 15px;
+            color: #828282;
+        }
+        .button{
+            background-color: #333333;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 6px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 
+    Body: #141414
+    kutu: #1f1f1f
+    Button: #333333
+    Yeşil metin: #94af40 
+    -->
+    <div class="card">
+        <img src="resim.jpg" alt="profil resmi">
+        <h1 id="name">Mehmet Emin Ketriz</h1>
+        <h3 id="city">Siverek, Türkiye</h3>
+        <span id="span">"Mobile and Front-end developer"</span>
+        <button class="button github">GitHub</button>
+        <button class="button frontend">Frontend Mentor</button>
+        <button class="button linkedin">LınkedIn</button>
+        <button class="button twitter">Twitter</button>
+        <button class="button instagram">Instagram</button>
+    </div>
+</body>
+</html>
