@@ -1,0 +1,78 @@
+body{
+    background-color: #dcc5b2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /*metni ortalama vs*/
+    text-align: center;
+}
+
+.cookie-img{
+    /*resmi yuvarlak yapma*/
+    margin-bottom: 8px;
+    border-radius: 50%;
+    width: 80px;
+}
+
+span{
+    font-family: "Roboto", sans-serif;
+    color: #521c0d;
+}
+
+p{
+    font-family: "Ancizar Sans", sans-serif;
+    color: #954c2e;
+    
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    /*kutunun içindeki elemanların köşesine boşluk veriyor ve sağa sola yatırıyor*/
+    justify-content: space-around;
+    width: 90%;
+    /*fikir almak için etrafına border ver*/
+    /*border:2px solid black;*/
+    margin-top: 8px;
+}
+
+a{
+    font-family: "Roboto", sans-serif;
+    color: #521c0d;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button{
+    font-family: "Roboto", sans-serif;
+    background-color: #deac80;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #603f26;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #603f26;
+    color: #deac80;
+}
