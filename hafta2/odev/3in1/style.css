@@ -58,7 +58,7 @@ body {
 }
 
 .menu li:hover {
-  background-color: #004504;
+  background-color: #0bbe14;
   color: #ff6347;
 }
 
@@ -92,6 +92,7 @@ a {
 
 .navbar.light {
   background-color: #ffffff35;
+  color: white;
 }
 
 .navbar.dark {
@@ -125,8 +126,8 @@ a {
 /* Menü yazılarının temaya uygun renk alması işlemi */
 .navbar.dark a,
 .navbar.blue a,
-.navbar.light{
-  color: white;
+.navbar.light a{
+  color: rgb(255, 255, 255);
 }
 
 /*Navbar Responsive Kodları*/
