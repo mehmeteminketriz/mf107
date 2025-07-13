@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Uygun Alsana</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/uygunalsana.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li class="aktif"><a href="https://www.uygunalsana.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.uygunalsana.com/hakkinda" target="_blank">About</a></li>
+            <li><a href="https://www.uygunalsana.com/category/all-products" target="_blank">Products</a></li>
+        </ul>
+        <div class="arama">
+            <input type="text" placeholder="Arama...">
+            <button>Ara</button>
+        </div>
+    </nav>
+
+    <div class="tema-secici">
+        <button onclick="temaDegistir('light')">Light</button>
+        <button onclick="temaDegistir('dark')">Dark</button>
+        <button onclick="temaDegistir('blue')">Blue</button>
+    </div>
+
+     <!-- Tema değiştirme işlevi -->
+  <script>
+    function temaDegistir(tema) {
+      const navbar = document.querySelector('.navbar');
+      const body = document.body;
+
+      navbar.classList.remove('light', 'dark', 'blue');
+      navbar.classList.add(tema);
+
+      body.classList.remove('tema-light', 'tema-dark', 'tema-blue');
+      body.classList.add('tema-' + tema);
+    }
+  </script>
+
+  <!--===========================================================================================================-->
+
+    <!--Profil Kartı-->
+    <div class="kapsayici">
+        <div class="ust"></div>
+        <img class="profilfoto" src="img/profile.jpg" alt="Profil Foto" />
+        <div class="alt">
+            <h1>Mehmet Emin Ketriz</h1>
+            <span>Founder of uygunalsana.com</span>
+
+            <div class="sosyalmedia">
+                <a href="https://www.facebook.com/mehmeteminketriz82" target="_blank"><img src="img/facebook.png" width="25" /></a>
+                <a href="https://x.com/meketriz" target="_blank"><img src="img/twitter.png" width="25" /></a>
+                <a href="https://www.instagram.com/mehmeteminketriz" target="_blank"><img src="img/instagram.png" width="25" /></a>
+                <a href="https://www.youtube.com/@sosyalcihad" target="_blank"><img src="img/youtube.png" width="25" /></a>
+            </div>
+
+            <div class="iletisim">
+                <button><a href="https://www.youtube.com/@sosyalcihad?sub_confirmation=1" target="_blank">Subscribe</a></button>
+                <button><a href="https://wa.me/905337376382" target="_blank">Message</a></button>
+            </div>
+
+            <div class="etkilesim">
+                <div class="like">
+                    <img src="img/like.png" width="20" />
+                    <span>60.4k</span>
+                </div>
+                <div class="comment">
+                    <img src="img/comment.png" width="20" />
+                    <span>20k</span>
+                </div>
+                <div class="share">
+                    <img src="img/share.png" width="20" />
+                    <span>12.4k</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===========================================================================================================-->
+
+    <!--Grid Kart-->
+    <div class="container">
+        <main class="card">
+
+            <article>
+                <img src="img/s40max.png" class="gridcartimg">
+                <div class="text">
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellat recusandae voluptate est iste consequatur.</p>
+                    <button>Join Us</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="img/v20pro.png" class="gridcartimg">
+                <div class="text">
+                    <h3>Web Designer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellat recusandae voluptate est iste consequatur.</p>
+                    <button>Join Us</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="img/lbk06.png" class="gridcartimg">
+                <div class="text">
+                    <h3>Graphic Designer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellat recusandae voluptate est iste consequatur.</p>
+                    <button>Join Us</button>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+</body>
+</html>

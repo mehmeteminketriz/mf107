@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Uygun Alsana</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="uygunalsana.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li class="aktif"><a href="https://www.uygunalsana.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.uygunalsana.com/hakkinda" target="_blank">About</a></li>
+            <li><a href="https://www.uygunalsana.com/category/all-products" target="_blank">Products</a></li>
+        </ul>
+        <div class="arama">
+            <input type="text" placeholder="Arama...">
+            <button>Ara</button>
+        </div>
+    </nav>
+
+    <div class="tema-secici">
+        <button onclick="temaDegistir('light')">Light</button>
+        <button onclick="temaDegistir('dark')">Dark</button>
+        <button onclick="temaDegistir('blue')">Blue</button>
+    </div>
+
+     <!-- Tema değiştirme işlevi -->
+  <script>
+    function temaDegistir(tema) {
+      const navbar = document.querySelector('.navbar');
+      const body = document.body;
+
+      navbar.classList.remove('light', 'dark', 'blue');
+      navbar.classList.add(tema);
+
+      body.classList.remove('tema-light', 'tema-dark', 'tema-blue');
+      body.classList.add('tema-' + tema);
+    }
+  </script>
+</body>
+</html>

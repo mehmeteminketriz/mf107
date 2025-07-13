@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.kapsayici {
+  width: 100%;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ust {
+  background-color: #4070f4;
+  height: 100px;
+  width: 100%;
+}
+
+.profilfoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  top: 50px; /* yarısı mavi, yarısı beyazda */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: white;
+  object-fit: cover;
+}
+
+.alt {
+  margin-top: 60px;
+  padding: 10px 20px 20px 20px;
+}
+
+.alt h1 {
+  margin: 10px 0 5px;
+  font-size: clamp(18px, 6vw, 22px);
+  color: #333;
+}
+
+.alt span {
+  color: #777;
+  font-size: clamp(13px, 4vw, 14px);
+}
+
+.sosyalmedia {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.iletisim {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.iletisim button {
+  background-color: #4070f4;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/*Subscribe butonu için ek düzenleme*/
+.iletisim button a {
+  color: white;
+  text-decoration: none;
+}
+
+.etkilesim {
+  display: flex;
+  justify-content: space-around;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.etkilesim div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/*Mobil uyumluluk*/
+
+@media (max-width: 600px) {
+  .alt h1 {
+    font-size: 18px;
+  }
+
+  .alt span {
+    font-size: 13px;
+  }
+
+  .iletisim button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .etkilesim {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
