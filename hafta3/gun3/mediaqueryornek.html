@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 100%;
+            height: 1200px;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, 50px);
+            gap: 10px;
+            align-content: space-between;
+            
+        }
+
+        .navbar{
+            height: 100px;
+            color: #000;
+            grid-column: 1 / span 4;
+            text-align: center;
+            background-color: bisque;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .box{
+            border-radius: 10px;
+            text-align: center;
+            background-color: red;
+
+        }
+
+        .footer{
+            height: 100px;
+            text-align: center;
+            background-color: bisque;
+            border-radius: 10px;
+            color: #000;
+            grid-column: 1 / span 4;
+        }
+
+        @media (max-width: 760px){
+
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(8, 100px);
+                
+            }
+
+
+            .box{
+                background-color: aqua;
+            }
+
+            .navbar{
+                grid-column: 1/ span 2;
+                grid-row: unset;
+            }
+
+            .footer{
+                grid-column: 1/ span 2;
+                grid-row: unset;
+            }
+
+        }
+
+        @media (max-width: 400px){
+
+            .container{
+                display: grid;
+                grid-template-columns: unset;
+                grid-template-rows: 50px 50px 50px;
+            }
+
+            .box{
+                background-color: yellow;
+            }
+
+            .navbar{
+                grid-column: unset;
+                grid-row: unset;
+            }
+
+            .footer{
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Navbar</h1>
+        </div>
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+
+        <div class="footer">
+            <span>
+                Footer
+            </span>
+        </div>
+    </div>
+</body>
+</html>

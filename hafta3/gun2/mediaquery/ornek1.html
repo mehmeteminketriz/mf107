@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px;
+            gap: 10px;
+        }
+        .box{
+            text-align: center;
+            color: white;
+            background-color: brown;
+        }
+
+
+        @media (max-width: 600px){
+
+            .container{
+                display: grid;
+                grid-template-columns: unset;
+                grid-template-rows: unset;
+                
+            }
+
+            .box{
+                padding: 10px;
+                background-color: aqua;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    
+</body>
+</html>

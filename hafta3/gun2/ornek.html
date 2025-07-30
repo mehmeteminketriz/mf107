@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container{
+            display: grid;
+            flex-direction: column;
+            height: 600px;
+            gap: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .header,footer{
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .sidebar{
+            text-align: center;
+            align-items: center;
+            padding-left: 2px;
+            background-color: aqua;
+            height: 520px;
+        }
+
+        .main-content{
+            text-align: center;
+            height: 520px;
+            background-color: blue;
+        }
+
+        .footer:nth-child(4){
+            text-align: center;
+            height: fit-content;
+            background-color: red;
+            grid-column: span 2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!--  .box$*7 yaparsak clası arttırarak gider
+          .box{$}*7 yaparsak metni arttırır ekler  -->
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

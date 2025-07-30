@@ -1,0 +1,28 @@
+*{
+    
+}
+
+body{
+    height: 600px;
+    border: 2px solid black;
+}
+
+.navbar{
+    background-color: plum;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+}
+
+.sidebar{
+    display: grid;
+    background-color: cadetblue;
+    grid-template-rows: 1fr; 
+    width: fit-content;
+}
+
+.main-content{
+    width: fit-content;
+    background-color: blue;
+    grid-template-rows: 2fr;
+}
