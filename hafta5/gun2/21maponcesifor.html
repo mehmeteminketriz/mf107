@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkgrey;
+        color: white;
+        font-size: xx-large;
+      }
+    </style>
+    <script>
+      // map öncesi
+
+      const isimler = ["Moshi", "Eva", "Serkan"];
+
+      let merhabaliIsimler = [];
+
+      for (let i = 0; i < isimler.length; i++) {
+        document.writeln(`İsim: ${isimler[i]} <br>`);
+        merhabaliIsimler.push(`Merhaba ${isimler[i]}`);
+      }
+
+      document.writeln("<br> <br>");
+
+      for (let i = 0; i < merhabaliIsimler.length; i++) {
+        document.writeln(`İsim: ${merhabaliIsimler[i]} <br>`);
+      }
+
+      // bunların daha kolay bir yolu var
+      // map metodu
+
+      const adlar = ["Uzeyir", "Ali", "Veli"];
+
+      const merhabaliAdlar = adlar.map((ad) => {
+        //document.writeln(`İsim: ${ad} <br>`);
+        return `Merhaba ${ad}`;
+      });
+
+      document.writeln("<br> <br>");
+      document.writeln(merhabaliAdlar.join("<br>")); // join metodu ile , ü boşluğa dönüştürme
+    </script>
+  </head>
+  <body></body>
+</html>

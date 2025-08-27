@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background-color: lightgreen;
+      }
+    </style>
     <script>
-      for (let i = 0; i < 10; i++) {
-        if (i === 5) {
-          continue; // 5'i atla
-        }
-        document.write("Sayı: " + i + "<br>");
+      selamVer(); // Fonksiyonu çağırma
+      function selamVer() {
+        document.write("<h1>Selamlar</h1>");
       }
     </script>
   </head>

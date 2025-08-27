@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkgrey;
+        color: white;
+        font-size: xx-large;
+      }
+    </style>
+    <script>
+      const sonuc = (yas) =>
+        yas >= 22
+          ? "Tır Ehliyeti Alabilir"
+          : yas >= 18
+          ? "Araba Ehliyeti Alabilir"
+          : "Ehliyeti Alamaz";
+      document.writeln(sonuc(18));
+    </script>
+  </head>
+  <body></body>
+</html>

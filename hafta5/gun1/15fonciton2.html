@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightyellow;
+      }
+    </style>
+    <script>
+      //geriye değer döndürmeyen fonksiyon
+      // alternatif functionlar biribirinin overwritıdır, overloadi  değildir
+      function selamVer(isim) {
+        document.write("<h1>" + "Selam " + isim);
+      }
+
+      function selamVer(isim, soyisim) {
+        document.write("<h1>" + "Selam " + isim + " " + soyisim);
+      }
+
+      function selamVer(isim, soyisim, yas) {
+        document.write(
+          "<h1>" + "Selam " + isim + " " + soyisim + " " + yas + " yaşında"
+        );
+      }
+
+      selamVer("Ahmet"); // Fonksiyonu çağırma
+      selamVer("Ahmet", "Yılmaz"); // Fonksiyonu çağırma
+      selamVer("Ahmet", "Yılmaz", 25); // Fonksiyonu çağırma
+    </script>
+  </head>
+  <body></body>
+</html>

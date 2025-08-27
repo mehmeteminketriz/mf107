@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkgrey;
+        color: white;
+        font-size: xx-large;
+      }
+    </style>
+    <script>
+      // => lamda function
+      // () => {}
+
+      // kare hesaplama (tek parametre)
+      // dikdörtgen alan (2 parametre uzun, kısa)
+      // ucgen alanı (2 parametre taban, yükseklik)
+
+      // template literals ile birlikte kullanarak sonuçları ekrana yazdırma
+      // fonksiyon ismi, parametreler, gövde
+      const kareHesapla = (kenar) => `Kare alanı: ${kenar * kenar} <br>`;
+
+      const dikdortgenHesapla = (uzun, kisa) =>
+        `Dikdörtgen alanı: ${uzun * kisa}<br>`;
+
+      const ucgenHesapla = (taban, yukseklik) =>
+        `Üçgen alanı: ${(taban * yukseklik) / 2}<br>`;
+
+      document.writeln(kareHesapla(5)); // "Kare alanı: 25"
+      document.writeln(dikdortgenHesapla(5, 10)); // "Dikdörtgen alanı: 50"
+      document.writeln(ucgenHesapla(5, 10)); // "Üçgen alanı: 25"
+    </script>
+  </head>
+  <body></body>
+</html>

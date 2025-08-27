@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="meyveler"></ul>
+
+    <script>
+      const meyveler = document.getElementById("meyveler");
+
+      const meyveListesi = ["Erik", "Üzüm", "Mandalina"];
+      const renkListesi = ["red", "Yellow", "blue"];
+
+      for (let i = 0; i < meyveListesi.length; i++) {
+        const meyve = meyveListesi[i];
+        const renk = renkListesi[i];
+
+        const li = document.createElement("li");
+        li.innerHTML = meyve;
+        li.style.backgroundColor = renk;
+
+        meyveler.appendChild(li);
+      }
+
+      /*const newDiv = document.createElement("div");
+        newDiv.innerHTML = "This is a new div element.";
+        newDiv.style.backgroundColor = "lightgreen";
+        newDiv.style.padding = "20px";
+        newDiv.style.margin = "10px";
+        newDiv.style.borderRadius = "10px";
+
+        // Append the new div to the body
+        document.body.appendChild(newDiv);
+
+        // Create another div and append it to the first one
+        const nestedDiv = document.createElement("div");
+        nestedDiv.innerHTML = "This is a nested div.";
+        nestedDiv.style.backgroundColor = "lightcoral";
+        nestedDiv.style.padding = "10px";
+        nestedDiv.style.marginTop = "10px";
+        
+        newDiv.appendChild(nestedDiv);*/
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkgrey;
+        color: white;
+        font-size: xx-large;
+      }
+    </style>
+    <script>
+      //en çok kulalnılan metodlar
+      // map
+      // join
+      // push
+      // pop
+      // shift
+      // unshift
+      // indexOf
+      // lastIndexOf: dizide 2 sayısını en son gördüğü yerin indeksini (sırasını) verir.
+      // includes: belirli bir eleman var mı yok mu
+      // slice: belirli bir aralıktaki elemanları alıp yeni bir dizi oluşturabiliriz
+      // concat: 2 veya daha fazla dizi birleştirme
+      // sort: diziyi küçükten büyüğe sıralar
+      //reverse: büyükten küçüğe diziyi ters çevirir
+      // filter: belirli bir koşula uyan elemanları alır
+      const sayilar = [8, 2, 6, 9, 3, 2, 5, 4, 7, 2, 3, 1];
+      const sayilar2 = [11, 22, 33, 44, 55, 66];
+      // let index1 = sayilar.indexOf(2);
+
+      document.writeln(`En son Görülen İndex (lastIndexOf) <br>`);
+      let index = sayilar.lastIndexOf(2);
+      document.writeln(`${index} <br>`);
+
+      document.writeln(`<br> Varmı Yokmu (includes) <br>`);
+      let varMi1 = sayilar.includes(0);
+      let varMi2 = sayilar.includes(5);
+      document.writeln(`${varMi1} <br>`);
+      document.writeln(`${varMi2} <br>`);
+
+      document.writeln(`<br> Diziyi Kesme (slice) <br>`);
+      let yeniDizi = sayilar.slice(3, 9); // sondaki eleman dahil değil
+
+      for (let i = 0; i < yeniDizi.length; i++) {
+        document.writeln(`${yeniDizi[i]} <br>`);
+      }
+      let birlesikDizi = sayilar.concat(sayilar2);
+
+      document.writeln(`<br> Birleşik Diziler <br>`);
+
+      for (let i = 0; i < birlesikDizi.length; i++) {
+        document.writeln(`${birlesikDizi[i]} <br>`);
+      }
+
+      document.writeln(`<br> Sıralama (Sort) <br>`);
+      sayilar.sort(); // küçükten büyüğe sıralar
+      for (let i = 0; i < sayilar.length; i++) {}
+
+      document.writeln(`${sayilar} <br>`);
+
+      document.writeln(`<br> Sıralama (Sort) <br>`);
+      sayilar.reverse; // küçükten büyüğe sıralar
+      for (let i = 0; i < sayilar.length; i++) {}
+      document.writeln(`${sayilar} <br>`);
+      document.writeln(`00000000000000000000000000000000000`);
+      document.writeln(`<br> Splice Metodu <br>`);
+      const arr = [1, 2, 3, 4];
+      arr.splice(1, 2, 5);
+      for (let i = 0; i < arr.length; i++) {
+        document.writeln(`${arr[i]} <br>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
